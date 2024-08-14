@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35d89c54-b3b7-48f3-a1c5-3c3423f024de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/utils/ActionsUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/utils/ScreenshotUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/utils/Waiters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/FirstTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/IndiaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/NewWebsiteTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/login.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/newsuite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/regression.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/smoke.xml" afterDir="false" />
-    </list>
+    <list default="true" id="35d89c54-b3b7-48f3-a1c5-3c3423f024de" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
