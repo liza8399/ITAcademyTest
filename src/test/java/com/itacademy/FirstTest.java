@@ -1,23 +1,14 @@
 package com.itacademy;
 
+import com.itacademy.utils.JSExecutorUtils;
 import com.itacademy.utils.Waiters;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
 import java.util.List;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 public class FirstTest extends BaseTest {
-
-	static final Logger LOGGER = LogManager.getLogger(FirstTest.class);
 
 	@Test
 	public void checkProduct(){
@@ -36,9 +27,19 @@ public class FirstTest extends BaseTest {
 	}
 
 	@Test
+	public void checkProduct1(){
+		driver.get("https://react-shopping-cart-67954.firebaseapp.com/");
+		Waiters.wait(3000);
+		List<WebElement> addToCartBtn = driver.findElements(By.xpath("//*[text() = 'Add to cart']"));
+		for(WebElement webElement: addToCartBtn)
+		{
+			JSExecutorUtils.click(driver, webElement);
+		}
+	}
+
+	@Test
 	public void checkValue(){
 
-		LOGGER.info("Starting the checkValue test");
 		driver.get("https://react-shopping-cart-67954.firebaseapp.com/");
 		List<WebElement> productsValue = driver.findElements(By.xpath("//*[@class ='sc-124al1g-6 ljgnQL']"));
 		Waiters.wait(2000);

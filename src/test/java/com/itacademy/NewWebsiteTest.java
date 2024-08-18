@@ -1,24 +1,20 @@
 package com.itacademy;
 
 import com.itacademy.utils.ActionsUtils;
+import com.itacademy.utils.JSExecutorUtils;
 import com.itacademy.utils.ScreenshotUtils;
 import com.itacademy.utils.Waiters;
-import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.io.File;
-import java.io.IOException;
 import java.util.List;
+
 
 public class NewWebsiteTest extends BaseTest{
 
-	static final Logger LOGGER = LogManager.getLogger(NewWebsiteTest.class);
+	private static final Logger LOGGER = LogManager.getLogger(NewWebsiteTest.class);
 
 	@Test
 	public void frametest(){
@@ -104,6 +100,28 @@ public class NewWebsiteTest extends BaseTest{
 		ActionsUtils.hoverAndClick(driver, driver.findElement(By.id("mousehover")),
 				driver.findElement(By.xpath("//*[text()='Reload']")));
 		Waiters.wait(1000);
+	}
+
+	@Test
+	public void getTextByJS(){
+		String name = "Liza";
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		driver.findElement(By.id("name")).sendKeys(name);
+		Assert.assertEquals(JSExecutorUtils.getTextByID(driver, "name"), name);
+	}
+
+	@Test
+	public void listenerTest(){
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		WebElement radioBtn1 = driver.findElement(By.xpath("//*[@value='radio1']"));
+		radioBtn1.click();
+		Assert.assertTrue(radioBtn1.isSelected());
+		WebElement radioBtn2 = driver.findElement(By.xpath("//*[@value='radio2']"));
+		radioBtn2.click();
+		Assert.assertTrue(radioBtn2.isSelected());
+		WebElement radioBtn3 = driver.findElement(By.xpath("//*[@value='radio3']"));
+		radioBtn3.click();
+		Assert.assertTrue(radioBtn3.isSelected());
 	}
 
 

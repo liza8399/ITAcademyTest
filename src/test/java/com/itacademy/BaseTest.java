@@ -1,22 +1,29 @@
 package com.itacademy;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import com.itacademy.enums.PropertiesValue;
+import com.itacademy.listeners.SeleniumListener;
+import com.itacademy.listeners.TestNGListener;
+import com.itacademy.utils.ConfigurationReader;
+import com.itacademy.utils.DriverFactory;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.Listeners;
 
 import java.time.Duration;
 
+@Listeners(TestNGListener.class)
+
 public class BaseTest {
+
 	protected WebDriver driver;
 
 	@BeforeMethod
 	public void setUp(){
-		System.setProperty("webdriver.chrome.driver", "/Users/elizavetafrolova/Library/chromedriver-mac-arm64/chromedriver");
-		driver = new ChromeDriver();
+		driver = DriverFactory.createDriver(ConfigurationReader.getProperty(PropertiesValue.BROWSER));
+		EventFiringDecorator<WebDriver> decorator = new EventFiringDecorator(new SeleniumListener());
+		driver = decorator.decorate(driver);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
