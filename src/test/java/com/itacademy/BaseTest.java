@@ -22,7 +22,7 @@ public class BaseTest {
 	@BeforeMethod
 	public void setUp(){
 		driver = DriverFactory.createDriver(ConfigurationReader.getProperty(PropertiesValue.BROWSER));
-		EventFiringDecorator<WebDriver> decorator = new EventFiringDecorator(new SeleniumListener());
+		EventFiringDecorator<WebDriver> decorator = new EventFiringDecorator<>(new SeleniumListener());
 		driver = decorator.decorate(driver);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

@@ -11,7 +11,7 @@ import java.util.List;
 public class FirstTest extends BaseTest {
 
 	@Test
-	public void checkProduct(){
+	public void checkProduct() {
 		driver.get("https://react-shopping-cart-67954.firebaseapp.com/");
 		WebElement firstProductName = driver.findElement(By.xpath("//*[@class = 'sc-124al1g-4 eeXMBo']"));
 		Waiters.wait(3000);
@@ -27,18 +27,17 @@ public class FirstTest extends BaseTest {
 	}
 
 	@Test
-	public void checkProduct1(){
+	public void checkProduct1() {
 		driver.get("https://react-shopping-cart-67954.firebaseapp.com/");
 		Waiters.wait(3000);
 		List<WebElement> addToCartBtn = driver.findElements(By.xpath("//*[text() = 'Add to cart']"));
-		for(WebElement webElement: addToCartBtn)
-		{
+		for (WebElement webElement : addToCartBtn) {
 			JSExecutorUtils.click(driver, webElement);
 		}
 	}
 
 	@Test
-	public void checkValue(){
+	public void checkValue() {
 
 		driver.get("https://react-shopping-cart-67954.firebaseapp.com/");
 		List<WebElement> productsValue = driver.findElements(By.xpath("//*[@class ='sc-124al1g-6 ljgnQL']"));
@@ -48,8 +47,8 @@ public class FirstTest extends BaseTest {
 		String productValue2 = productsValue.get(1).getText();
 		String productValue3 = productsValue.get(4).getText();
 
-		productValue1 = productValue1.replaceAll("\\$","").trim();
-		productValue2 = productValue2.replaceAll("\\$","").trim();
+		productValue1 = productValue1.replaceAll("\\$", "").trim();
+		productValue2 = productValue2.replaceAll("\\$", "").trim();
 		productValue3 = productValue3.replaceAll("\\$", "").trim();
 
 		double valueOfProduct1 = Double.parseDouble(productValue1);
@@ -64,10 +63,25 @@ public class FirstTest extends BaseTest {
 		Waiters.wait(3000);
 		WebElement valueOfProdOnCart = driver.findElement(By.cssSelector(".sc-1h98xa9-9.jzywDV"));
 		String valueOnCart = valueOfProdOnCart.getText();
-		valueOnCart = valueOnCart.replaceAll("\\$","").trim();
+		valueOnCart = valueOnCart.replaceAll("\\$", "").trim();
 		double valOnCart = Double.valueOf(valueOnCart);
-		Assert.assertEquals(expectedSumOfProducts,valOnCart, "Value is not equal");
-
+		Assert.assertEquals(expectedSumOfProducts, valOnCart, "Value is not equal");
 	}
 
+	@Test
+	public void elementInElement() {
+		driver.get("https://react-shopping-cart-67954.firebaseapp.com/");
+		Waiters.wait(3000);
+		List<WebElement> products = driver.findElements(By.cssSelector(".sc-124al1g-2"));
+		for (WebElement webElement : products) {
+			System.out.println(webElement.findElement(By.xpath(".//*[contains(@class, 'sc-124al1g-4')]")).getText());
+			if (webElement.findElement(By.xpath(".//*[contains(@class, 'sc-124al1g-4')]")).
+					getText().equals("Skater Black Sweatshirt"))
+			{
+				webElement.findElement(By.xpath(".//*[text()= 'Add to cart']")).click();
+			}
+		}
+		Waiters.wait(3000);
+
+	}
 }

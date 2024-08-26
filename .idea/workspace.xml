@@ -5,21 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35d89c54-b3b7-48f3-a1c5-3c3423f024de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/enums/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/enums/PropertiesValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/utils/ConfigurationReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/utils/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/utils/JSExecutorUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/configuration.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/listeners/SeleniumListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/listeners/TestNGListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/FailedLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/ForgotPasswordPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/SignUpFormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/FacebookTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itacademy/enums/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/FirstTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/IndiaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/IndiaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/NewWebsiteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/NewWebsiteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/listeners/SeleniumListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/listeners/SeleniumListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/listeners/TestNGListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/listeners/TestNGListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +49,20 @@
     "Application.FirstTest.executor": "Debug",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.ItAcademyTest [clean].executor": "Run",
+    "Maven.ItAcademyTest [compile].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.FacebookTest.exampleTest (1).executor": "Run",
+    "TestNG.FacebookTest.exampleTest.executor": "Debug",
+    "TestNG.FacebookTest.exampleTestWithPageObject.executor": "Run",
+    "TestNG.FacebookTest.failedLoggin (1).executor": "Run",
+    "TestNG.FacebookTest.failedLoggin.executor": "Debug",
+    "TestNG.FacebookTest.forgetPasswordTest.executor": "Run",
+    "TestNG.FacebookTest.forgotPasswordTest.executor": "Run",
+    "TestNG.FacebookTest.loginTest.executor": "Run",
     "TestNG.FirstTest.checkProduct.executor": "Run",
     "TestNG.FirstTest.checkProduct1.executor": "Run",
     "TestNG.FirstTest.checkValue.executor": "Run",
+    "TestNG.FirstTest.elementInElement.executor": "Run",
     "TestNG.FirstTest.executor": "Run",
     "TestNG.IndiaTest.checkAsserts.executor": "Run",
     "TestNG.IndiaTest.login.executor": "Run",
@@ -68,9 +76,17 @@
     "TestNG.NewWebsiteTest.windowtest.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/elizavetafrolova/IdeaProjects/ItAcademyTest",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -81,8 +97,80 @@
       <recent name="com.itacademy" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.NewWebsiteTest.listenerTest">
-    <configuration name="FirstTest.checkProduct1" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.FacebookTest.loginTest">
+    <configuration name="FacebookTest.exampleTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ItAcademyTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itacademy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itacademy" />
+      <option name="MAIN_CLASS_NAME" value="com.itacademy.FacebookTest" />
+      <option name="METHOD_NAME" value="exampleTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FacebookTest.exampleTestWithPageObject" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ItAcademyTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itacademy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itacademy" />
+      <option name="MAIN_CLASS_NAME" value="com.itacademy.FacebookTest" />
+      <option name="METHOD_NAME" value="exampleTestWithPageObject" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FacebookTest.forgotPasswordTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ItAcademyTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itacademy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itacademy" />
+      <option name="MAIN_CLASS_NAME" value="com.itacademy.FacebookTest" />
+      <option name="METHOD_NAME" value="forgotPasswordTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FacebookTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ItAcademyTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itacademy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itacademy" />
+      <option name="MAIN_CLASS_NAME" value="com.itacademy.FacebookTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest.elementInElement" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ItAcademyTest" />
       <extension name="coverage">
         <pattern>
@@ -92,7 +180,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.itacademy" />
       <option name="MAIN_CLASS_NAME" value="com.itacademy.FirstTest" />
-      <option name="METHOD_NAME" value="checkProduct1" />
+      <option name="METHOD_NAME" value="elementInElement" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -103,6 +191,7 @@
     <configuration name="NewSuit" type="TestNG">
       <module name="ItAcademyTest" />
       <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/newsuit.xml" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -118,95 +207,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewWebsiteTest.frametest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ItAcademyTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itacademy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.itacademy" />
-      <option name="MAIN_CLASS_NAME" value="com.itacademy.NewWebsiteTest" />
-      <option name="METHOD_NAME" value="frametest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewWebsiteTest.getTextByJS" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ItAcademyTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itacademy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.itacademy" />
-      <option name="MAIN_CLASS_NAME" value="com.itacademy.NewWebsiteTest" />
-      <option name="METHOD_NAME" value="getTextByJS" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewWebsiteTest.hoverTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ItAcademyTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itacademy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.itacademy" />
-      <option name="MAIN_CLASS_NAME" value="com.itacademy.NewWebsiteTest" />
-      <option name="METHOD_NAME" value="hoverTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NewWebsiteTest.listenerTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ItAcademyTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itacademy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.itacademy" />
-      <option name="MAIN_CLASS_NAME" value="com.itacademy.NewWebsiteTest" />
-      <option name="METHOD_NAME" value="listenerTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="TestNG.NewSuit" />
-      <item itemvalue="TestNG.NewWebsiteTest.listenerTest" />
-      <item itemvalue="TestNG.NewWebsiteTest.getTextByJS" />
-      <item itemvalue="TestNG.FirstTest.checkProduct1" />
-      <item itemvalue="TestNG.NewWebsiteTest.frametest" />
-      <item itemvalue="TestNG.NewWebsiteTest.hoverTest" />
+      <item itemvalue="TestNG.FacebookTest.exampleTestWithPageObject" />
+      <item itemvalue="TestNG.FacebookTest.forgotPasswordTest" />
+      <item itemvalue="TestNG.FacebookTest.loginTest" />
+      <item itemvalue="TestNG.FacebookTest.exampleTest (1)" />
+      <item itemvalue="TestNG.FirstTest.elementInElement" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.NewWebsiteTest.listenerTest" />
-        <item itemvalue="TestNG.NewWebsiteTest.getTextByJS" />
-        <item itemvalue="TestNG.NewWebsiteTest.frametest" />
-        <item itemvalue="TestNG.FirstTest.checkProduct1" />
-        <item itemvalue="TestNG.NewWebsiteTest.hoverTest" />
+        <item itemvalue="TestNG.FacebookTest.loginTest" />
+        <item itemvalue="TestNG.FacebookTest.forgotPasswordTest" />
+        <item itemvalue="TestNG.FacebookTest.exampleTestWithPageObject" />
+        <item itemvalue="TestNG.FirstTest.elementInElement" />
+        <item itemvalue="TestNG.FacebookTest.exampleTest (1)" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -216,8 +241,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722964582286</updated>
+      <workItem from="1724350459732" duration="54000" />
+      <workItem from="1724351972743" duration="1684000" />
+      <workItem from="1724353668068" duration="2801000" />
+      <workItem from="1724356484630" duration="139000" />
+      <workItem from="1724356629142" duration="2439000" />
+      <workItem from="1724359083506" duration="1150000" />
+      <workItem from="1724535758589" duration="1951000" />
+      <workItem from="1724537723133" duration="47000" />
+      <workItem from="1724656940309" duration="137000" />
+      <workItem from="1724657083345" duration="183000" />
+      <workItem from="1724657271720" duration="1758000" />
+      <workItem from="1724659380257" duration="275000" />
+      <workItem from="1724659662256" duration="275000" />
+      <workItem from="1724660022171" duration="11469000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.seleniumhq.selenium:selenium-java" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -240,7 +286,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/itacademy/FirstTest.java</url>
-          <line>51</line>
+          <line>50</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -253,6 +299,21 @@
           <line>62</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/itacademy/FirstTest.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/itacademy/FacebookTest.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/itacademy/FacebookTest.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/itacademy/NewWebsiteTest.java</url>
           <line>105</line>
@@ -264,5 +325,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
