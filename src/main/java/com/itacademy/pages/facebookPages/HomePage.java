@@ -32,6 +32,10 @@ public class HomePage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
+    public void open(){
+        driver.get("https://www.facebook.com/");
+    }
     public void clickCookies(){
         allowAllCookiesBtn.click();
     }

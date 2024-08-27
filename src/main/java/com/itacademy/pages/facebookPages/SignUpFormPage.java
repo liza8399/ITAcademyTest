@@ -29,6 +29,6 @@ public class SignUpFormPage {
     }
 
     public void sexChoice() {
-        driver.findElement(By.id("u_2_4_yS")).click();
+        driver.findElement(By.xpath("//*[@class='_58mt']")).click();
     }
 }
