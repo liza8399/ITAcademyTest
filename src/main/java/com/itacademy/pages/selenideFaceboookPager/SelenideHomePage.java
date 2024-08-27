@@ -1,11 +1,12 @@
-package com.itacademy.pages.facebookPages;
+package com.itacademy.pages.selenideFaceboookPager;
 
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import com.itacademy.pages.facebookPages.FailedLogin;
+import com.itacademy.pages.facebookPages.ForgotPasswordPage;
+import com.itacademy.pages.facebookPages.SignUpFormPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 import static com.codeborne.selenide.Selenide.*;
 
@@ -22,24 +23,25 @@ public class SelenideHomePage {
 
 
     public void open(){
-        driver.get("https://www.facebook.com/");
+        Selenide.open("https://www.facebook.com/");
     }
+
     public void clickCookies(){
         allowAllCookiesBtn.click();
     }
 
-    public SignUpFormPage clickCreateNewAccountBtn(){
+    public SelenideSignUpPage clickCreateNewAccountBtn(){
         createNewAccountBtn.click();
-        return new SignUpFormPage(driver);
+        return new SelenideSignUpPage();
     }
 
     public String getCreateNewAccountBtnText(){
         return createNewAccountBtn.getText();
     }
 
-    public ForgotPasswordPage clickForgotPasswordBtn(){
+    public SelenideForgotPswPage clickForgotPasswordBtn(){
         forgotPasswordBtn.click();
-        return new ForgotPasswordPage(driver);
+        return new SelenideForgotPswPage();
     }
 
     public void emailInput (String emailText){

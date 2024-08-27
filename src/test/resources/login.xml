@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite2" verbose="1" >
+
+    <test name="FacebookTest" >
+        <classes>
+            <class name="com.itacademy.FacebookTest">
+                <methods>
+                    <exclude name="signUpTest"/>
+                    <exclude name="forgotPasswordTest"/>
+                </methods>
+            </class>
+            <class name="com.itacademy.FirstTest"/>
+        </classes>
+    </test>
+
+</suite>

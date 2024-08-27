@@ -1,9 +1,6 @@
 package com.itacademy;
 
-import com.itacademy.utils.ActionsUtils;
-import com.itacademy.utils.JSExecutorUtils;
-import com.itacademy.utils.ScreenshotUtils;
-import com.itacademy.utils.Waiters;
+import com.itacademy.utils.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
@@ -123,6 +120,16 @@ public class NewWebsiteTest extends BaseTest{
 		radioBtn3.click();
 		Assert.assertTrue(radioBtn3.isSelected());
 	}
+
+	@Test
+	public void autocompleteTest(){
+		DriverManager.getDriver().get("https://rahulshettyacademy.com/AutomationPractice/");
+		DriverManager.getDriver().findElement(By.id("autocomplete")).sendKeys("India");
+		Waiters.wait(3000);
+		DriverManager.getDriver().findElement(By.xpath("//div[text()='India' and @class ='ui-menu-item-wrapper']")).click();
+	}
+
+
 
 
 

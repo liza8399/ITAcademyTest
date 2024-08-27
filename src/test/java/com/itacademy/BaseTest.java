@@ -5,6 +5,7 @@ import com.itacademy.listeners.SeleniumListener;
 import com.itacademy.listeners.TestNGListener;
 import com.itacademy.utils.ConfigurationReader;
 import com.itacademy.utils.DriverFactory;
+import com.itacademy.utils.DriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.testng.annotations.AfterMethod;
@@ -19,18 +20,10 @@ public class BaseTest {
 
 	protected WebDriver driver;
 
-	@BeforeMethod
-	public void setUp(){
-		driver = DriverFactory.createDriver(ConfigurationReader.getProperty(PropertiesValue.BROWSER));
-		EventFiringDecorator<WebDriver> decorator = new EventFiringDecorator<>(new SeleniumListener());
-		driver = decorator.decorate(driver);
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-	}
 
 	@AfterMethod
 	public void quit(){
-		driver.quit();
+		DriverManager.quit();
 	}
 }

@@ -3,7 +3,7 @@ package com.itacademy.enums;
 public enum PropertiesValue {
 
 	BROWSER("browser", "chrome"),
-	BROWSER_VERSION("browserVersion", "126");
+	SELENIUM_URL("selenium_url", "http://localhost:4444");
 
 	private String key;
 	private String defaultValue;

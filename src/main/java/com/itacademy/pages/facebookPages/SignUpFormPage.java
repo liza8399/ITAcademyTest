@@ -1,4 +1,4 @@
-package com.itacademy.pages;
+package com.itacademy.pages.facebookPages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,8 +9,8 @@ public class SignUpFormPage {
 
     private WebDriver driver;
 
-    @FindBy(id = "u_2_4_yS")
-    private WebElement sex;
+    @FindBy(xpath = "//*[@class='_58mt']")
+    private WebElement femaleRadioBtn;
 
     public SignUpFormPage(WebDriver driver) {
         this.driver = driver;
@@ -29,6 +29,6 @@ public class SignUpFormPage {
     }
 
     public void sexChoice() {
-        driver.findElement(By.xpath("//*[@class='_58mt']")).click();
+        femaleRadioBtn.click();
     }
 }

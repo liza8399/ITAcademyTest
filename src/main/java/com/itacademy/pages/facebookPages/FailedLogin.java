@@ -1,4 +1,4 @@
-package com.itacademy.pages;
+package com.itacademy.pages.facebookPages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

@@ -1,20 +1,23 @@
 package com.itacademy;
 
-import com.itacademy.pages.FailedLogin;
-import com.itacademy.pages.ForgotPasswordPage;
-import com.itacademy.pages.HomePage;
-import com.itacademy.pages.SignUpFormPage;
+import com.itacademy.pages.facebookPages.FailedLogin;
+import com.itacademy.pages.facebookPages.ForgotPasswordPage;
+import com.itacademy.pages.facebookPages.HomePage;
+import com.itacademy.pages.facebookPages.SignUpFormPage;
+import com.itacademy.utils.DriverManager;
 import com.itacademy.utils.ScreenshotUtils;
 import com.itacademy.utils.Waiters;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.lang.module.Configuration;
+
 public class FacebookTest extends BaseTest {
 
     @Test
-    public void exampleTestWithPageObject(){
-        driver.get("https://www.facebook.com/");
-        HomePage homePage = new HomePage(driver);
+    public void signUpTest(){
+        DriverManager.getDriver().get("https://www.facebook.com/");
+        HomePage homePage = new HomePage(DriverManager.getDriver());
 //        homePage.clickCookies();
         Assert.assertEquals(homePage.getCreateNewAccountBtnText(), "Создать новый аккаунт");
         SignUpFormPage signUpFormPage = homePage.clickCreateNewAccountBtn();
@@ -22,19 +25,19 @@ public class FacebookTest extends BaseTest {
         signUpFormPage.typeLastName("456");
         signUpFormPage.typeEmail("123@gmail.com");
         signUpFormPage.sexChoice();
-        ScreenshotUtils.makeScreenshot(driver, "signupForm");
+        ScreenshotUtils.makeScreenshot(DriverManager.getDriver(), "signupForm");
     }
 
     @Test
     public void forgotPasswordTest(){
-        driver.get("https://www.facebook.com/");
-        String homePageWindow = driver.getWindowHandle();
-        HomePage homePage = new HomePage(driver);
+        DriverManager.getDriver().get("https://www.facebook.com/");
+        String homePageWindow = DriverManager.getDriver().getWindowHandle();
+        HomePage homePage = new HomePage(DriverManager.getDriver());
         ForgotPasswordPage forgotPasswordPage = homePage.clickForgotPasswordBtn();
         Waiters.wait(3000);
-        for (String windowString: driver.getWindowHandles()){
+        for (String windowString: DriverManager.getDriver().getWindowHandles()){
             if(!windowString.equals(homePageWindow)){
-                driver.switchTo().window(windowString);
+                DriverManager.getDriver().switchTo().window(windowString);
             }
         }
         String forgotPasswordPageTitle = forgotPasswordPage.ForgotPasswordPageText();
@@ -43,13 +46,13 @@ public class FacebookTest extends BaseTest {
 
     @Test
     public void loginTest(){
-        driver.get("https://www.facebook.com/");
-        HomePage homePage = new HomePage(driver);
+        DriverManager.getDriver().get("https://www.facebook.com/");
+        HomePage homePage = new HomePage(DriverManager.getDriver());
         homePage.emailInput("123");
         homePage.passwordInput("456");
         FailedLogin failedLogin = homePage.clickLogInBtn();
         String failedLoginMessage = failedLogin.failedLogInPageMessage();
         Assert.assertEquals(failedLoginMessage, "Введенный вами электронный адрес или номер мобильного телефона не связан ни с одним аккаунтом. Найдите свой аккаунт и войдите в систему.");
-        ScreenshotUtils.makeScreenshot(driver, "failedLogin");
+        ScreenshotUtils.makeScreenshot(DriverManager.getDriver(), "failedLogin");
     }
 }

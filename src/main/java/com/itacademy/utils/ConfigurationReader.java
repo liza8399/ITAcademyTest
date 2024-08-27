@@ -1,6 +1,7 @@
 package com.itacademy.utils;
 
 import com.itacademy.enums.PropertiesValue;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -18,8 +19,18 @@ public class ConfigurationReader {
 		} catch (IOException e){
 			throw new RuntimeException();
 		};
+
+		for (Object key : properties.keySet()) {
+			String systemValue = System.getProperty((String) key);
+			if (!StringUtils.isEmpty(systemValue)) {
+				properties.put(key, systemValue);
+			}
+		}
+
 		return properties.getProperty(property.getKey(), property.getDefaultValue());
 	}
+
+
 
 
 }
