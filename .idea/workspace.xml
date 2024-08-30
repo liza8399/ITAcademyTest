@@ -5,26 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35d89c54-b3b7-48f3-a1c5-3c3423f024de" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/selenideFaceboookPager/SelenideForgotPswPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/selenideFaceboookPager/SelenideHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/selenideFaceboookPager/SelenideSignUpPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/utils/DriverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/SelenideFacebook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/SelenideShopTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itacademy/enums/PropertiesValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/enums/PropertiesValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/FailedLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/facebookPages/FailedLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/ForgotPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/facebookPages/ForgotPasswordPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/facebookPages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/SignUpFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/facebookPages/SignUpFormPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itacademy/utils/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/utils/ConfigurationReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/itacademy/utils/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/utils/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/FacebookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/FacebookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/NewWebsiteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/NewWebsiteTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/regression.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/smoke.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,56 +36,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.FirstTest.executor": "Debug",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.ItAcademyTest [clean].executor": "Run",
-    "Maven.ItAcademyTest [compile].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.FacebookTest.exampleTest (1).executor": "Run",
-    "TestNG.FacebookTest.exampleTest.executor": "Debug",
-    "TestNG.FacebookTest.exampleTestWithPageObject.executor": "Run",
-    "TestNG.FacebookTest.failedLoggin (1).executor": "Run",
-    "TestNG.FacebookTest.failedLoggin.executor": "Debug",
-    "TestNG.FacebookTest.forgetPasswordTest.executor": "Run",
-    "TestNG.FacebookTest.forgotPasswordTest.executor": "Run",
-    "TestNG.FacebookTest.loginTest.executor": "Run",
-    "TestNG.FacebookTest.signUpTest.executor": "Run",
-    "TestNG.FirstTest.checkProduct.executor": "Run",
-    "TestNG.FirstTest.checkProduct1.executor": "Run",
-    "TestNG.FirstTest.checkValue.executor": "Run",
-    "TestNG.FirstTest.elementInElement.executor": "Run",
-    "TestNG.FirstTest.executor": "Run",
-    "TestNG.IndiaTest.checkAsserts.executor": "Run",
-    "TestNG.IndiaTest.login.executor": "Run",
-    "TestNG.NewSuit.executor": "Run",
-    "TestNG.NewWebsiteTest.alerttest.executor": "Run",
-    "TestNG.NewWebsiteTest.autocompleteTest.executor": "Run",
-    "TestNG.NewWebsiteTest.frametest.executor": "Run",
-    "TestNG.NewWebsiteTest.getTextByJS.executor": "Run",
-    "TestNG.NewWebsiteTest.hidenelementtest.executor": "Run",
-    "TestNG.NewWebsiteTest.hoverTest.executor": "Debug",
-    "TestNG.NewWebsiteTest.listenerTest.executor": "Run",
-    "TestNG.NewWebsiteTest.windowtest.executor": "Run",
-    "TestNG.SelenideFacebook.firstTest.executor": "Run",
-    "TestNG.SelenideFacebook.secondTest.executor": "Run",
-    "TestNG.SelenideFacebook.thirdTest.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/elizavetafrolova/IdeaProjects/ItAcademyTest",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.FirstTest.executor&quot;: &quot;Debug&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ItAcademyTest [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ItAcademyTest [compile].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.FacebookTest.exampleTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FacebookTest.exampleTest.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.FacebookTest.exampleTestWithPageObject.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FacebookTest.failedLoggin (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FacebookTest.failedLoggin.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.FacebookTest.forgetPasswordTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FacebookTest.forgotPasswordTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FacebookTest.loginTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FacebookTest.signUpTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FirstTest.checkProduct.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FirstTest.checkProduct1.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FirstTest.checkValue.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FirstTest.elementInElement.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.FirstTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.IndiaTest.checkAsserts.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.IndiaTest.login.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NewSuit.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NewWebsiteTest.alerttest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NewWebsiteTest.autocompleteTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NewWebsiteTest.frametest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NewWebsiteTest.getTextByJS.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NewWebsiteTest.hidenelementtest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NewWebsiteTest.hoverTest.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.NewWebsiteTest.listenerTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.NewWebsiteTest.windowtest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SelenideFacebook.firstTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SelenideFacebook.secondTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SelenideFacebook.thirdTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/elizavetafrolova/IdeaProjects/ItAcademyTest&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -266,7 +251,10 @@
       <workItem from="1724657271720" duration="1758000" />
       <workItem from="1724659380257" duration="275000" />
       <workItem from="1724659662256" duration="275000" />
-      <workItem from="1724660022171" duration="32346000" />
+      <workItem from="1724660022171" duration="34948000" />
+      <workItem from="1724787361796" duration="1021000" />
+      <workItem from="1724867571133" duration="4141000" />
+      <workItem from="1725017082982" duration="1221000" />
     </task>
     <servers />
   </component>

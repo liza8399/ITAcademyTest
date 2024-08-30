@@ -9,7 +9,6 @@
                     <exclude name="forgotPasswordTest"/>
                 </methods>
             </class>
-            <class name="com.itacademy.FirstTest"/>
         </classes>
     </test>
 

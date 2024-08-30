@@ -13,9 +13,9 @@ import java.net.URL;
 
 public class DriverFactory {
 
-	public static WebDriver createDriver(String browserName){
+	public static WebDriver createDriver(String browserName) {
 
-		if(browserName.equals("chrome")) {
+		if (browserName.equals("chrome")) {
 			ChromeOptions chromeOptions = new ChromeOptions();
 			URL url = null;
 			try {
@@ -24,7 +24,7 @@ public class DriverFactory {
 				throw new RuntimeException(e);
 			}
 			return new RemoteWebDriver(url, chromeOptions);
-		}else if(browserName.equals("firefox")) {
+		} else if (browserName.equals("firefox")) {
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
 			URL url = null;
 			try {
@@ -32,10 +32,10 @@ public class DriverFactory {
 			} catch (MalformedURLException e) {
 				throw new RuntimeException(e);
 			}
-			return new RemoteWebDriver(url,firefoxOptions);
-		} else{
+			return new RemoteWebDriver(url, firefoxOptions);
+		} else {
 			return null;
 		}
-
 	}
 }
+
