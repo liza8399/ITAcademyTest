@@ -9,7 +9,7 @@ public class FailedLogin {
 
     private WebDriver driver;
 
-    @FindBy(xpath = "//*[@class='_9ay7']")
+    @FindBy(xpath = "//div[contains(@class, 'fsl') and contains(@class, 'fwb') and contains(@class, 'fcb')]")
     private WebElement failedLoginMessage;
 
     public FailedLogin(WebDriver driver) {
