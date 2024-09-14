@@ -24,7 +24,7 @@ public class HomePage {
     @FindBy(id = "pass")
     private WebElement passwordFieldInput;
 
-    @FindBy(id = "loginbutton")
+    @FindBy(xpath = "//*[@data-testid='royal_login_button']")
     private WebElement loginBtn;
 
 

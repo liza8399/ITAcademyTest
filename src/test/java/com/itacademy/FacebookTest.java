@@ -52,7 +52,7 @@ public class FacebookTest extends BaseTest {
         homePage.passwordInput("456");
         FailedLogin failedLogin = homePage.clickLogInBtn();
         String failedLoginMessage = failedLogin.failedLogInPageMessage();
-        Assert.assertEquals(failedLoginMessage, "Wrong credentials");
+        Assert.assertEquals(failedLoginMessage, "The email or mobile number you entered isn’t connected to an account. Find your account and log in.");
         ScreenshotUtils.makeScreenshot(DriverManager.getDriver(), "failedLogin");
     }
 }
