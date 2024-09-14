@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="35d89c54-b3b7-48f3-a1c5-3c3423f024de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/facebookPages/FailedLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/facebookPages/FailedLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/facebookPages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/pages/facebookPages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/FacebookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/FacebookTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +47,8 @@
     "TestNG.FacebookTest.failedLoggin.executor": "Debug",
     "TestNG.FacebookTest.forgetPasswordTest.executor": "Run",
     "TestNG.FacebookTest.forgotPasswordTest.executor": "Run",
-    "TestNG.FacebookTest.loginTest.executor": "Debug",
-    "TestNG.FacebookTest.signUpTest.executor": "Run",
+    "TestNG.FacebookTest.loginTest.executor": "Run",
+    "TestNG.FacebookTest.signUpTest.executor": "Debug",
     "TestNG.FirstTest.checkProduct.executor": "Run",
     "TestNG.FirstTest.checkProduct1.executor": "Run",
     "TestNG.FirstTest.checkValue.executor": "Run",
@@ -131,6 +128,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FacebookTest.signUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ItAcademyTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itacademy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itacademy" />
+      <option name="MAIN_CLASS_NAME" value="com.itacademy.FacebookTest" />
+      <option name="METHOD_NAME" value="signUpTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NewSuit" type="TestNG">
       <module name="ItAcademyTest" />
       <shortenClasspath name="NONE" />
@@ -168,24 +183,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelenideFacebook.secondTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ItAcademyTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itacademy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.itacademy" />
-      <option name="MAIN_CLASS_NAME" value="com.itacademy.SelenideFacebook" />
-      <option name="METHOD_NAME" value="secondTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SelenideFacebook.thirdTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ItAcademyTest" />
       <extension name="coverage">
@@ -206,19 +203,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.NewSuit" />
+      <item itemvalue="TestNG.FacebookTest.signUpTest" />
       <item itemvalue="TestNG.FacebookTest.forgotPasswordTest" />
       <item itemvalue="TestNG.FacebookTest.loginTest" />
       <item itemvalue="TestNG.NewWebsiteTest.autocompleteTest" />
-      <item itemvalue="TestNG.SelenideFacebook.secondTest" />
       <item itemvalue="TestNG.SelenideFacebook.thirdTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.FacebookTest.loginTest" />
+        <item itemvalue="TestNG.FacebookTest.signUpTest" />
         <item itemvalue="TestNG.NewWebsiteTest.autocompleteTest" />
         <item itemvalue="TestNG.SelenideFacebook.thirdTest" />
         <item itemvalue="TestNG.FacebookTest.forgotPasswordTest" />
-        <item itemvalue="TestNG.SelenideFacebook.secondTest" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +252,7 @@
       <workItem from="1724787361796" duration="1021000" />
       <workItem from="1724867571133" duration="4141000" />
       <workItem from="1725017082982" duration="2148000" />
-      <workItem from="1726312962040" duration="7572000" />
+      <workItem from="1726312962040" duration="15052000" />
     </task>
     <servers />
   </component>
@@ -312,7 +309,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/itacademy/utils/DriverFactory.java</url>
-          <line>17</line>
+          <line>19</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -328,6 +325,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/itacademy/FacebookTest.java</url>
+          <line>47</line>
+          <properties class="com.itacademy.FacebookTest" method="loginTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
