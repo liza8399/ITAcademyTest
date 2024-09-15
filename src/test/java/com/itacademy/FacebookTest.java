@@ -10,7 +10,6 @@ import com.itacademy.utils.Waiters;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.lang.module.Configuration;
 
 public class FacebookTest extends BaseTest {
 
@@ -19,13 +18,13 @@ public class FacebookTest extends BaseTest {
         DriverManager.getDriver().get("https://www.facebook.com/");
         HomePage homePage = new HomePage(DriverManager.getDriver());
 //        homePage.clickCookies();
-        Assert.assertEquals(homePage.getCreateNewAccountBtnText(), "Создать новый аккаунт");
+        Assert.assertEquals(homePage.getCreateNewAccountBtnText(), "Create new account");
         SignUpFormPage signUpFormPage = homePage.clickCreateNewAccountBtn();
         signUpFormPage.typeFirstName("123");
         signUpFormPage.typeLastName("456");
         signUpFormPage.typeEmail("123@gmail.com");
         signUpFormPage.sexChoice();
-        ScreenshotUtils.makeScreenshot(DriverManager.getDriver(), "signupForm");
+        ScreenshotUtils.makeScreenshot();
     }
 
     @Test
@@ -53,7 +52,7 @@ public class FacebookTest extends BaseTest {
         FailedLogin failedLogin = homePage.clickLogInBtn();
         Waiters.wait(20000);
         String failedLoginMessage = failedLogin.failedLogInPageMessage();
-        Assert.assertEquals(failedLoginMessage, "The email or mobile number you entered isn’t connected to an account. Find your account and log in.");
-        ScreenshotUtils.makeScreenshot(DriverManager.getDriver(), "failedLogin");
+        Assert.assertEquals(failedLoginMessage, "The email address or mobile number you entered isn't connected to an account. Find your account and log in.");
+
     }
 }

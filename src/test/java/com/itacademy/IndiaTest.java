@@ -1,5 +1,6 @@
 package com.itacademy;
 
+import com.itacademy.utils.DriverManager;
 import com.itacademy.utils.Waiters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -13,14 +14,14 @@ public class IndiaTest extends BaseTest{
 
 	@Test
 	public void login(){
-		driver.get("https://rahulshettyacademy.com/angularpractice/");
-		WebElement nameInputField = driver.findElement(By.name("name"));
+		DriverManager.getDriver().get("https://rahulshettyacademy.com/angularpractice/");
+		WebElement nameInputField = DriverManager.getDriver().findElement(By.name("name"));
 		nameInputField.sendKeys("Liza");
 
-		WebElement emailInputField = driver.findElement(By.name("email"));
+		WebElement emailInputField = DriverManager.getDriver().findElement(By.name("email"));
 		emailInputField.sendKeys("");
 
-		WebElement checkbox = driver.findElement(By.xpath("//*[@type='checkbox']"));
+		WebElement checkbox = DriverManager.getDriver().findElement(By.xpath("//*[@type='checkbox']"));
 		checkbox.click();
 		checkbox.click();
 		Assert.assertTrue(checkbox.isSelected());
@@ -28,28 +29,28 @@ public class IndiaTest extends BaseTest{
 		Assert.assertFalse(checkbox.isSelected());
 
 		// To check this alert, it is needed to click something on the page. So we do this check here
-		WebElement alertText = driver.findElement(By.cssSelector(".alert.alert-danger"));
+		WebElement alertText = DriverManager.getDriver().findElement(By.cssSelector(".alert.alert-danger"));
 		Assert.assertEquals(alertText.getText(),"Email is required");
 		Assert.assertTrue(alertText.isDisplayed());
 
-		Select selectElement = new Select(driver.findElement(By.id("exampleFormControlSelect1")));
+		Select selectElement = new Select(DriverManager.getDriver().findElement(By.id("exampleFormControlSelect1")));
 		selectElement.selectByIndex(0);
 		selectElement.selectByVisibleText("Female");
 		Assert.assertEquals((selectElement.getFirstSelectedOption().getText()), "Female");
 
-		WebElement radioBtn = driver.findElement(By.id("inlineRadio1"));
+		WebElement radioBtn = DriverManager.getDriver().findElement(By.id("inlineRadio1"));
 		radioBtn.click();
 		Assert.assertTrue(radioBtn.isSelected());
 
-		WebElement radioBtn2 = driver.findElement(By.id("inlineRadio2"));
+		WebElement radioBtn2 = DriverManager.getDriver().findElement(By.id("inlineRadio2"));
 		radioBtn2.click();
 		Assert.assertTrue(radioBtn2.isSelected());
 
 
-		WebElement submit = driver.findElement(By.xpath("//input[@value='Submit']"));
+		WebElement submit = DriverManager.getDriver().findElement(By.xpath("//input[@value='Submit']"));
 		submit.click();
 		Waiters.wait(3000);
-		WebElement successAlert = driver.findElement(By.cssSelector(".alert.alert-success.alert-dismissible"));
+		WebElement successAlert = DriverManager.getDriver().findElement(By.cssSelector(".alert.alert-success.alert-dismissible"));
 		String successAlertText = successAlert.getText();
 		successAlertText = successAlertText.replaceAll("×\\n","");
 		Assert.assertEquals(successAlertText,"Success! The Form has been submitted successfully!.");

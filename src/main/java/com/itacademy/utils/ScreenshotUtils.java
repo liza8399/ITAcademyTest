@@ -1,5 +1,6 @@
 package com.itacademy.utils;
 
+import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,17 +17,8 @@ import java.util.Date;
 public class ScreenshotUtils {
 	static final Logger LOGGER = LogManager.getLogger(ScreenshotUtils.class);
 
-	public static void makeScreenshot(WebDriver driver, String fileName){
-		File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("d.MM-HH.MM.ss");
-		Date date = new Date();
-		String currentDateString = simpleDateFormat.format(date);
-		simpleDateFormat.format(date);
-		File file1 = new File(fileName + currentDateString + ".png");
-		try {
-			FileUtils.copyFile(file, file1);
-		} catch (IOException e) {
-			LOGGER.info("Screenshot wasn't saved");
-		}
+	@Attachment(value = "Page screenshot", type = "image/png")
+	public static byte[] makeScreenshot(){
+		return ((TakesScreenshot)DriverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
 	}
 }

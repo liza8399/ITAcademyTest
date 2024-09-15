@@ -9,6 +9,11 @@
                     <exclude name="forgotPasswordTest"/>
                 </methods>
             </class>
+            <class name="com.itacademy.IndiaTest">
+                <methods>
+                    <exclude name="checkAsserts"/>
+                </methods>
+            </class>
         </classes>
     </test>
 

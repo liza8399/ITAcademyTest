@@ -19,7 +19,7 @@ public class NewWebsiteTest extends BaseTest{
 		Waiters.wait(3000);
 		List<WebElement> list = driver.findElements(By.xpath("//*[text()='All Access plan']"));
 		LOGGER.info(list.size());
-		ScreenshotUtils.makeScreenshot(driver, "frame");
+		ScreenshotUtils.makeScreenshot();
 		driver.switchTo().frame("courses-iframe");
 		List<WebElement> list1 = driver.findElements(By.xpath("//*[text()='All Access plan']"));
 		System.out.println(list1.size());

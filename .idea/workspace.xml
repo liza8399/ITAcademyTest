@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="35d89c54-b3b7-48f3-a1c5-3c3423f024de" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itacademy/utils/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/utils/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itacademy/utils/ScreenshotUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itacademy/utils/ScreenshotUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/FacebookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/FacebookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/IndiaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/IndiaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/itacademy/NewWebsiteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/itacademy/NewWebsiteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/login.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +54,7 @@
     "TestNG.FacebookTest.failedLoggin.executor": "Debug",
     "TestNG.FacebookTest.forgetPasswordTest.executor": "Run",
     "TestNG.FacebookTest.forgotPasswordTest.executor": "Run",
-    "TestNG.FacebookTest.loginTest.executor": "Run",
+    "TestNG.FacebookTest.loginTest.executor": "Debug",
     "TestNG.FacebookTest.signUpTest.executor": "Debug",
     "TestNG.FirstTest.checkProduct.executor": "Run",
     "TestNG.FirstTest.checkProduct1.executor": "Run",
@@ -252,7 +259,8 @@
       <workItem from="1724787361796" duration="1021000" />
       <workItem from="1724867571133" duration="4141000" />
       <workItem from="1725017082982" duration="2148000" />
-      <workItem from="1726312962040" duration="15052000" />
+      <workItem from="1726312962040" duration="16451000" />
+      <workItem from="1726403700672" duration="6782000" />
     </task>
     <servers />
   </component>
@@ -289,7 +297,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/itacademy/IndiaTest.java</url>
-          <line>52</line>
+          <line>53</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -302,20 +310,25 @@
           <line>72</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/itacademy/FacebookTest.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/itacademy/utils/DriverFactory.java</url>
-          <line>19</line>
+          <line>15</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/itacademy/FacebookTest.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="29" />
+          <line>53</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/itacademy/BaseTest.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/4.23.0/selenium-remote-driver-4.23.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class</url>
+          <line>270</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/itacademy/NewWebsiteTest.java</url>
@@ -325,15 +338,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/itacademy/FacebookTest.java</url>
-          <line>47</line>
-          <properties class="com.itacademy.FacebookTest" method="loginTest">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
